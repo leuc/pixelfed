@@ -14,3 +14,5 @@ use Illuminate\Http\Request;
 */
 
 Route::post('/users/{username}/inbox', 'FederationController@userInbox');
+
+Route::post('/api/v1/register', 'ClientsController@register')->name('clients.register');
